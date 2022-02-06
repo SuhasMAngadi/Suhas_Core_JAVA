@@ -1,0 +1,19 @@
+public class SimpleMethod {
+    public static void main(String[] args) {
+         System.out.println("Before method o/p"); 
+        method1(); 
+    }
+    public static void method1(){
+       System.out.println("Method o/p"); 
+    }
+}
+
+
+
+
+
+
+
+O/P: 
+Before method o/p
+Method o/p
