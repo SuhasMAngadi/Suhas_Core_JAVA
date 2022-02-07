@@ -1,0 +1,15 @@
+//Main.java
+
+public class Main {
+
+  public static void main (String[] args){
+  
+    String myJob = "Programmer";
+    System.out.println(myJob);
+    }
+  }
+  
+  
+  
+  o/p:
+  Programmer
