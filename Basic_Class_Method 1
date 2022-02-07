@@ -1,0 +1,30 @@
+//Main.java
+
+public class Main
+{
+    public static void main(String[] args) {
+        Me.sayName();
+        Me.sayAge();
+    }
+}
+
+
+
+
+//Me.java
+
+public class Me {
+    public static void sayName(){ 
+        System.out.println("Suhas");
+    }
+        public static void sayAge(){ 
+        System.out.println("23");
+        }
+        
+}
+
+
+//Executing Main.java we get the O/P:
+
+Suhas
+23
