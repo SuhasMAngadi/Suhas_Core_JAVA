@@ -1,0 +1,16 @@
+//Main.java
+
+
+public class Main
+{
+    public static void main(String[] args) {
+        String text = "Some Random string";
+        String NewText;
+        NewText = text.toUpperCase();
+        System.out.println(NewText);
+    }
+}
+
+
+O/P:
+SOME RANDOM STRING
