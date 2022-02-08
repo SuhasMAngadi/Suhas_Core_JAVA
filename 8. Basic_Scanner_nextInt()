@@ -10,6 +10,11 @@ public class Main
     }
 }
 
+/* Important Note: The type of data you enter via keyboard should match the data type you are expecting,
+entering different data type than specified will throw an error, For example:
+If you have used nextInt(); then input must be an Integer i.e
+Entering "100.890" (Float) or "ABVDD" (String) will throw an exception */
+
 
 O/P:
 
