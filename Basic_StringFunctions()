@@ -1,0 +1,43 @@
+//Main.java
+
+
+public class Main
+{
+    public static void main(String[] args) {
+        String text = "SoMe RanDom stRinG";
+        String s1,s2;
+        
+        s1 = text.toUpperCase();
+        System.out.println(s1);
+        
+        s2 = text.toLowerCase();
+        System.out.println(s2);
+        
+        int s3 = text.length();
+        System.out.println(s3);
+        
+        boolean s4 = text.isEmpty();
+        System.out.println(s4);
+        
+        char s5 = text.charAt(5);
+        System.out.println(s5);
+        
+        System.out.println(text.indexOf('o')); 
+        //only first appearence index will be displayed if it's repeated multiple times
+        
+        String s6 = text.concat(" contatinated");
+        System.out.println(s6);     
+    }
+}
+
+
+
+O/P:
+
+SOME RANDOM STRING
+some random string
+18
+false
+R
+1
+SoMe RanDom stRinG contatinated
