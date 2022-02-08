@@ -1,0 +1,27 @@
+/* nextLine() is used to read string statement which consists of whitespaces,
+if you use next() to read statement containing spaces, only string element
+before the first whitespace will be displayed instead of entire string containing spaces */
+
+//Main.java
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println(input.nextLine());
+        
+        
+    }
+}
+
+/* Important Note: The type of data you enter via keyboard should match the data type you are expecting,
+entering different data type than specified will throw an error, For example:
+If you have used nextInt(); then input must be an Integer i.e
+Entering "100.890" (Float) or "ABVDD" (String) will throw an exception */
+
+O/P:
+
+string with spaces      //this 'string with spaces' is the value you enter via keyboard
+string with spaces      //this 'string with spaces' is the output displayed by program
