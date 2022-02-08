@@ -1,0 +1,22 @@
+//Main.java
+
+public class Main
+{
+    public static void main(String[] args) {
+        String s1 = "Smart";
+        String s2 = "Suhas";
+        
+        System.out.println(s1+s2);
+        System.out.println(s1+ " " + s2);
+        System.out.println(s1+ " " + s2 + 5 + 3);
+        System.out.println(s1+ " " + s2 + s2.concat("5"));
+        
+        
+    }
+}
+
+O/P:
+SmartSuhas
+Smart Suhas
+Smart Suhas53
+Smart SuhasSuhas5
