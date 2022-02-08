@@ -1,0 +1,21 @@
+//Main.java
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter your favorite number: ");
+        int FavNum = input.nextInt();
+        System.out.print(FavNum + " " + "is your favorite number");
+        
+    }
+}
+   
+   
+O/P:
+
+Enter your favorite number: 
+78                              //user i/p
+78 is your favorite number      //program o/p
