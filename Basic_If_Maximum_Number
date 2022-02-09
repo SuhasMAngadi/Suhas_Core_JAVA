@@ -1,0 +1,25 @@
+//Main.java
+
+//Largest of two numbers
+
+public class Main
+{
+    public static void main(String[] args) {
+        int x = 15;
+        int y = 10;
+        
+        if(x > y){
+            System.out.println("The maximum is:" + x);
+        }
+        if(x < y){
+            System.out.println("The maximum is:" + y);
+        }
+        if(x == y){
+        System.out.println("The numbers are equal");
+        }
+    }
+}
+
+o/p:
+
+15
