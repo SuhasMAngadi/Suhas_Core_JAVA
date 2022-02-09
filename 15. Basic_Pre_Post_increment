@@ -1,0 +1,31 @@
+//pre increment:  ++i increments the value of i by 1 and uses new value in the statement
+
+public class Main
+{
+    public static void main(String[] args) {
+        int i = 1;
+        int j = ++i;
+        System.out.println("i is "+ i + " j is " + j);
+    }
+}
+
+o/p:
+
+i is 2 j is 2
+
+
+
+//post increment: i++ increments the value of i by 1 and uses original value in the statement
+
+public class Main
+{
+    public static void main(String[] args) {
+        int i = 1;
+        int j = i++;
+        System.out.println("i is "+ i + " j is " + j);
+    }
+}
+
+o/p:
+
+i is 2 j is 1
