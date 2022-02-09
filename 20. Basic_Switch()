@@ -1,0 +1,23 @@
+public class Main
+{
+    public static void main(String[] args) {
+        
+        int n = 20;
+        
+        switch (n){
+            case 10: 
+                System.out.println("=10");
+            case 20:
+                System.out.println("=20");
+            default:
+                System.out.println("None of the above");
+        }
+        
+        
+}
+}
+
+o/p:
+
+=20
+None of the above
