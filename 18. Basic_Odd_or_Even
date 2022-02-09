@@ -26,3 +26,33 @@ o/p:
 Enter the number:
 15
 The number is odd
+
+
+//using if-else statement
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        System.out.print("Enter the number:");
+        Scanner input = new Scanner (System.in);
+        int Num = input.nextInt();
+        
+        if(Num % 2 == 0)
+        {
+            System.out.println("The number is even" );
+        }
+        
+        else
+        {
+        System.out.println("The number is odd");
+        
+    }
+}
+}
+
+o/p:
+
+Enter the number:
+50
+The number is even
