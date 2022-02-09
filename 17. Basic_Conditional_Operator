@@ -1,0 +1,29 @@
+//Syntax:  Condition ? expression 1 (if true) : expression 2 (if false)
+
+public class Main
+{
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 15;
+        int max = a > b ? a : b;
+        System.out.println(max);
+    }
+}
+
+o/p:
+
+15
+
+
+public class Main
+{
+    public static void main(String[] args) {
+        String Name = "String Example";
+        
+        System.out.println(Name.isEmpty() ? "The name is invalid" : Name);
+    }
+}
+
+o/p:
+
+String Example
