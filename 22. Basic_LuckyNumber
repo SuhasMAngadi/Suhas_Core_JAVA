@@ -1,0 +1,39 @@
+// A 4 digit number is considered to be lucky if sum of first two digits is equal to sum of 3rd and 4th digit
+
+//Main.java
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Enter a four digit number:");
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        
+        if(n<999 && n>10000){
+            System.out.println("Entered number is not a 4 digit number");
+        }
+        else{
+            int n1 = n % 10; //4th digit
+            int n2 = (n / 10) % 10; //3rd digit
+            int n3 = (n / 100) % 10; //2nd digit
+            int n4 = (n / 1000) % 10; //1st digit
+            
+            if(n1 + n2 == n3 + n4){
+                System.out.println("The entered number is lucky");
+            }
+            else
+            {
+                System.out.println("The entered number is unlucky");
+            }
+        }
+        
+        
+}
+}
+
+o/p:
+Enter a four digit number:
+
+1221
+The entered number is lucky
