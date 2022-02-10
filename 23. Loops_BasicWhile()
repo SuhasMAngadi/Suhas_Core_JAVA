@@ -1,0 +1,32 @@
+//To check if number entered is between 1 and 10
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Enter a number:");
+        Scanner input = new Scanner(System.in);
+        int n = input.nextInt();
+        
+        while (n<1 || n>10){
+            System.out.println("The number is not between 1 and 10, Re-enter the number");
+            n = input.nextInt();
+        }
+        System.out.println("The number is between 1 and 10!");
+        }
+    }
+    
+o/p:
+
+Enter a number:
+
+-1
+The number is not between 1 and 10, Re-enter the number
+89
+The number is not between 1 and 10, Re-enter the number
+0
+The number is not between 1 and 10, Re-enter the number
+5
+The number is between 1 and 10!
+    
+    
