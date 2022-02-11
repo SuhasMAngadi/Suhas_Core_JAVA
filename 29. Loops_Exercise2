@@ -1,0 +1,36 @@
+//Read sequence of integers and stops displaying "Done" when sum of these values exceeds 100
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        
+        int sum=0;
+        
+            while(true)
+            {
+                System.out.println("Enter a number");
+                sum += s.nextInt();
+                
+                if(sum>100)
+                    break;
+                
+            }
+            System.out.println("Done, The sum is: "+sum);
+        }
+    }
+    
+o/p:
+    
+Enter a number
+5
+Enter a number
+7
+Enter a number
+9
+Enter a number
+60
+Enter a number
+30
+Done, The sum is: 111
