@@ -1,0 +1,43 @@
+/* Reads the first value from user suppose its maximum and minimum (max and min),
+Keep updating the max and min as long as user is giving positive values input,
+Display the results when user enters negative value */
+
+//Main.java
+
+import java.util.Scanner;
+public class Main{    
+ public static void main(String args[]){ 
+
+  System.out.println("Enter a number:");
+  Scanner s = new Scanner(System.in);
+  int n = s.nextInt();
+  int max = n;
+  int min = n; //initially assigning input to both max and min
+  
+  while(true){
+      n = s.nextInt();
+      if(n > max && n>0){
+          max = n;
+      }
+      if( n< min && n>0){
+          min = n;
+      }
+      if (n<0){
+          System.out.println("The maximum and minimum is :" +max+" "+min);
+          break;
+      }
+      
+  } 
+}    
+} 
+
+o/p:
+
+Enter a number:
+
+8
+5
+23
+2
+-1
+The maximum and minimum is :23 2
