@@ -1,0 +1,26 @@
+//Program which displays sum of digits of an integer read from a user
+
+//Main.java
+
+import java.util.Scanner;
+public class Main{    
+ public static void main(String args[]){ 
+
+  
+  System.out.println("Enter a number:");
+  Scanner s = new Scanner(System.in);
+  int n = s.nextInt();
+  int sum = 0;
+  while(n>0){
+      sum += n % 10;
+      n /= 10;
+  }
+  System.out.println("The sum of digits is: " +sum);
+}    
+}   
+
+Enter a number:
+
+12345
+The sum of digits is: 15
+
