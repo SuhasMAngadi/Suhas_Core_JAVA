@@ -1,0 +1,13 @@
+//void method: does not return any value
+
+public static void sayHi(){
+  System.out.println("Hi");
+  }
+  
+//value returning method: returns some value
+
+public static int sum(int x, int y){
+  int sum = x + y;
+  return sum;
+  }
+  
