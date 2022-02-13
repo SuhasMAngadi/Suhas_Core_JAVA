@@ -1,0 +1,23 @@
+//Writing same method with different parameters
+
+public class Main
+{
+    public static void main(String[] args) {
+        sayHi();
+        sayHi("Suhas");
+    }
+    public static void sayHi(){
+        System.out.println("Hi");
+    }
+    public static void sayHi(String name){
+        System.out.println("Hi "+name);
+    }    
+}
+/* Observe, same method sayHi() has different parameters,
+i.e one has no parameter, the other one has parameter 'name' of type string */
+
+
+o/p:
+
+Hi
+Hi Suhas
