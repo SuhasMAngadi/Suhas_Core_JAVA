@@ -1,0 +1,29 @@
+//Method that gets name and age of the user
+
+//Main.java
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        System.out.println("Enter your name and age : ");
+        
+        System.out.println("Your name and age is: "+getName()+ " " + getAge());
+        
+    }
+    public static String getName(){
+        return new Scanner(System.in).nextLine();
+        
+    }
+    public static Double getAge(){
+        return new Scanner(System.in).nextDouble();
+    }    
+}
+
+o/p:
+
+Enter your name and age : 
+
+Suhas
+23
+Your name and age is: Suhas 23.0
