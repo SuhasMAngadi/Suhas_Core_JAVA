@@ -1,0 +1,22 @@
+// Arrays.fill(ArrayName, value) : fills whole array with the same value
+
+int[] numbers1 = new int[8];
+Arrays.fill(numbers1, 3); // {3, 3, 3, 3, 3, 3, 3, 3}
+
+-----
+
+//Arrays.fill(ArrayName, fromIndex, toIndex, value) : fills array with the value from start to end index
+ 
+int[] numbers2 = new int[8]; //{0, 0, 0, 0, 0, 0, 0, 0}
+Arrays.fill(numbers2, 3, 7, 5); //{0, 0, 0, 5, 5, 5, 5, 0}
+
+
+-----
+
+String[] str = new String[3];
+Arrays.fill(str, "hello"); //{"hello", "hello", "hello"}
+//printing arrays using toString()
+System.out.println(Arrays.toString(str));
+
+o/p:
+[hello, hello, hello]
