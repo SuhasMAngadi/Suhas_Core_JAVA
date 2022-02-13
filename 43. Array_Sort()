@@ -1,0 +1,15 @@
+//sorts whole array
+
+int[] numbers = {5, 2, 3, -1, 0, 4, 1};
+Arrays.sort(numbers); //-1, 0, 1, 2, 3, 4, 5
+
+char[] characters = {'a', 'z', 'b', 'w', 'c', 'A', 'D', 'Z', 'C'};
+Arrays.sort(characters); //A, C, D, Z, a, b, c, w, z
+
+
+
+
+//sort(array, fromIndex, toIndex): sorts from (fromIndex) to (toIndex-1)
+
+int[] numbers = {5, 4, 3, 2, 1, 0, -1}; 
+Arrays.sort(numbers, 3, 7); //5, 4, 3, -1, 0, 1, 2
