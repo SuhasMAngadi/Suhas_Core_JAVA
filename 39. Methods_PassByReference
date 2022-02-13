@@ -1,0 +1,24 @@
+//Pass by reference
+//Code has syntax errors
+
+public class Main
+{
+    public static void main(String[] args) {
+        point p1 = new point();
+        p1.x = 1; 
+        p1.y = 2; 
+       
+        System.out.println("x= "+ p1.x +" "+ "y= "+ p1.y);
+        change(p1);
+        System.out.println("x= "+ p1.x +" "+ "y= "+ p1.y);
+    }
+    public static void change(point p){
+        p.x = 2;
+        p.y = 1;
+    }
+}
+
+o/p;
+
+x= 1 y= 2
+x= 2 y= 1
