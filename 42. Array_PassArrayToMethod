@@ -1,0 +1,29 @@
+//Passing Arrays to methods
+
+//Main.java
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        int[] num = {0,1,2};
+        change(num);
+        printArray(num);
+        
+    }
+    public static void change(int[] num){
+        num[0] = 2;
+        num[1] = 1;
+        num[2] = 0;
+    }
+    public static void printArray(int[] num){
+        for(int i=0; i< num.length; i++){
+           System.out.print(num[i]+" "); 
+        }
+        
+    }    
+}
+
+o/p:
+
+2 1 0 
