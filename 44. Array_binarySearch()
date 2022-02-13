@@ -1,0 +1,4 @@
+//Array should be initially sorted in increasing order to use binarySearch() keyword
+
+//Syntax: binarySearch(ArrayName, element);
+
