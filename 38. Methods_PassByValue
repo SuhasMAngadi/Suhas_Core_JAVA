@@ -1,0 +1,21 @@
+//passing by value
+
+//Main.java
+
+public class Main
+{
+    public static void main(String[] args) {
+        int x = 1;
+        Inc(x); //copy of the actual value will be used, original value will remain un effected
+        System.out.println(x);
+    }
+    public static void Inc(int x){
+        x++;
+        System.out.println(x);
+    }
+}
+
+o/p:
+
+2
+1
