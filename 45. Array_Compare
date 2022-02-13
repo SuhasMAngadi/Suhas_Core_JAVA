@@ -1,1 +1,26 @@
+//Comparing Arrays with Arrays.equals
+
+int[] numbers1 = {5, 4, 3, 2, 1, 0, -1};
+int[] numbers2 = {5, 4, 3, 2, 1, 0, -1};
+int[] numbers3 = {1, 2, 3, 7, 7, 8, 1};
+
+System.out.println(Arrays.equals(numbers1, numbers2)); //true
+System.out.println(Arrays.equals(numbers1, numbers3)); //false
+
+-----
+
+String[] string1 = {"a", "b", "c"};
+String[] string2 = {"a", "b", "c"};
+String[] string3 = {"e", "d", "m"};
+
+System.out.println(Arrays.equals(string1, string2)); //true
+System.out.println(Arrays.equals(string1, string3)); //false
+
+-----
+
+String[] str1 = new String("hello suhas");
+String[] str2 = new String("hello suhas");
+
+System.out.println(str1.equals(str2)); //true
+
 
