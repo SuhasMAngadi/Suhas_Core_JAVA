@@ -1,4 +1,13 @@
 //Array should be initially sorted in increasing order to use binarySearch() keyword
 
-//Syntax: binarySearch(ArrayName, element);
+//Syntax: Arrays.binarySearch(ArrayName, element);
+
+
+int[] numbers = {5, 4, 3, 2, 1, 0, -1};
+Arrays.sort(numbers); //-1, 0, 1, 2, 3, 4, 5
+System.out.print(Arrays.binarySearch(numbers, 4));
+
+o/p:
+5 //the index value of 4 will be displayed
+
 
