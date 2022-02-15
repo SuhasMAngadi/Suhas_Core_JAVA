@@ -1,0 +1,26 @@
+//Main.java
+
+//display maximum of each row in a 2d array
+
+public class Main
+{
+    public static void main(String[] args) {
+        int[][] numbers = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}}; 
+        
+        for(int i=0; i<3; i++){
+            int max = 0; //to check max of each row, if not declare this outside loop to check maximum in entire array
+            for(int j=0; j<4; j++)
+                if(numbers[i][j] >= max)
+                    max = numbers[i][j];
+            
+            System.out.println("The maximum of row "+(i+1)+ ": "+max);    
+            }  
+        }
+}
+
+o/p:
+
+The maximum of row 1: 4
+The maximum of row 2: 8
+The maximum of row 3: 12
+
