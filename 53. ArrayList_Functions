@@ -1,0 +1,77 @@
+//ArrayList is a re-sizeable array
+
+//initialization
+
+ArrayList<Integer> numbers = new ArrayList <>();
+ArrayList<String> fruits = new ArrayList <>();
+ArrayList<Double> doubles = new ArrayList <>(); //cannot use primitive data types like (int, double, boolean, char etc)
+
+-----
+
+//Adding items to an array list
+
+fruits.add("Apple");
+fruits.add("Banana");
+fruits.add("Strawberry");
+System.out.println(fruits); // [Apple, Banana, Strawberry]
+
+//Adding item to particular index
+fruits.add(0, "Atindex0");
+System.out.println(fruits); // [Atindex0, Apple, Banana, Strawberry]
+fruits.add(2, "Atindex2"); 
+System.out.println(fruits); // [Atindex0, Apple, Atindex2, Banana, Strawberry]
+
+-----
+
+//Access an item 
+// Consider i/p to be [Apple, Banana, Strawberry]
+
+System.out.println(fruits.get(0)); //Apple
+System.out.println(fruits.get(1)); //Banana
+System.out.println(fruits.get(2)); //Strawberry
+
+-----
+
+//Change an item
+
+fruits.set(2, "orange");  //strawberry will change to orange
+System.out.println(fruits); // [Apple, Banana, orange]
+
+-----
+
+//Remove an item
+
+//a. remove by index
+
+// Consider i/p to be [Apple, Banana, orange]
+
+fruits.remove(1);  //remove element at index1
+System.out.println(fruits); // [Apple, orange]
+
+//b. remove by value
+
+fruits.remove("Banana");  //remove "Banana"
+System.out.println(fruits); // [Apple, orange]
+
+-----
+
+//Remove all the elements
+
+fruits.clear(); 
+System.out.println(fruits); // [ ]
+
+-----
+
+//To find Size of an array list
+
+// Consider i/p to be [Apple, Banana, orange]
+
+System.out.println(fruits.size()); //3
+
+
+
+
+
+
+
+
