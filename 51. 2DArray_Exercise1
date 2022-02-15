@@ -1,0 +1,44 @@
+//Sum of individual rows and column of a 2d array
+
+//Main.java
+
+public class Main
+{
+    public static void main(String[] args) {
+        int[][] numbers = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}}; 
+        
+        for(int i=0; i<3; i++){
+            int sum = 0; /*sum should be declared inside the loop, so that after displaying sum o/p for a given 
+            row, the sum will be reset to zero and next row value will be displayed, if you declare sum outside 
+            the loop, 'sum' will contain sum of all elements of array, since it won't reset after iterating
+            through each row*/
+            for(int j=0; j<4; j++)
+                sum += numbers[i][j];
+            
+            System.out.println("The sum of row "+(i+1)+ ": "+sum);    
+            }  
+            
+            for(int i=0; i<4; i++){
+            int sum = 0; /*sum should be declared inside the loop, so that after displaying sum o/p for a given 
+            column, the sum will be reset to zero and next column value will be displayed, if you declare sum outside 
+            the loop, 'sum' will contain sum of all elements of array, since it won't reset after iterating
+            through each column*/
+            for(int j=0; j<3; j++)
+                sum += numbers[j][i];
+            
+            System.out.println("The sum of column "+(i+1)+ ": "+sum);    
+            }  
+            
+        }
+}
+
+o/p:
+
+The sum of row 1: 10
+The sum of row 2: 26
+The sum of row 3: 42
+The sum of column 1: 15
+The sum of column 2: 18
+The sum of column 3: 21
+The sum of column 4: 24
+
