@@ -1,0 +1,40 @@
+//a. print 2d array
+
+public class Main
+{
+    public static void main(String[] args) {
+       int[][] numbers = {{1, 1, 2}, {3, 3, 3}};
+       
+       //print first row
+       System.out.print(numbers[0][0]+" ");
+       System.out.print(numbers[0][1]+" ");
+       System.out.print(numbers[0][2]+" ");
+       
+       //print second row
+       System.out.print(numbers[1][0]+" ");
+       System.out.print(numbers[1][1]+" ");
+       System.out.print(numbers[1][2]+" ");
+       
+    }     
+}
+
+o/p:
+1 1 2 3 3 3 
+
+//b. print 2d array using loop
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+       int[][] numbers = {{1, 1, 2}, {3, 3, 3}};
+       
+       for(int i=0; i<2; i++){
+           for(int j=0; j<3; j++)
+                 System.out.print(numbers[i][j]+" ");
+       }
+   }     
+}
+
+o/p:
+1 1 2 3 3 3 
