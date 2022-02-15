@@ -1,0 +1,29 @@
+//Main.java
+
+//Maximum and Minimum elements of an array
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+       int[] numbers = {1, 1, 2, 3, 3, 3, 6};
+       int max = 0;
+       
+       
+       for(int i=0; i<numbers.length; i++){
+           if(numbers[i] >= max)
+                max = numbers[i];
+       }
+       int min = max;
+       for(int i=0; i<numbers.length; i++){
+            if(numbers[i] <= min)
+                min = numbers[i]; 
+       }
+       System.out.println("The maximum is: "+max+" The minimum is: "+min);
+       
+    }
+}
+
+o/p:
+The maximum is: 6 The minimum is: 1
+
