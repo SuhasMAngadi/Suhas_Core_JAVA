@@ -1,1 +1,127 @@
+/* Create a menu program with following options:
+a. Add element.
+b. Remove element.
+c. Display element.
+d. Exit. 
+program runs infinitely until user chooses 4th option */
+
+//Main.java
+
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+        ArrayList<Integer> integers = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
+        
+        while(true){
+            System.out.println();
+            System.out.println("1. Add");
+            System.out.println("2. Remove");
+            System.out.println("3. Display");
+            System.out.println("4. Exit");
+            System.out.println();
+            System.out.print("Your choice: ");
+            int choice = input.nextInt();
+            
+            if(choice == 1){
+                //ADD
+                System.out.println("Enter an integer: ");
+                integers.add(input.nextInt());
+                System.out.println("Integer added");
+            }
+            else if(choice == 2){
+                //Remove
+                System.out.println("Enter an integer to remove : ");
+                int removeElement = input.nextInt();
+                if(integers.contains(removeElement)){
+                    integers.remove(Integer.valueOf(removeElement));
+                    System.out.println("Integer removed");
+                }
+                else
+                {
+                    System.out.println("Element to be removed not found");
+                }
+                
+            }
+            else if(choice == 3){
+                //Display
+                System.out.println("Your List: "+integers);
+            }
+            else if(choice == 4) {
+                //Exit
+                System.out.println("Good Bye!");
+                break;
+            }
+        }
+    }
+}
+
+o/p:
+1. Add
+2. Remove
+3. Display
+4. Exit
+
+Your choice: 
+1
+Enter an integer: 
+5
+Integer added
+
+1. Add
+2. Remove
+3. Display
+4. Exit
+
+Your choice: 
+1
+Enter an integer: 
+3
+Integer added
+
+1. Add
+2. Remove
+3. Display
+4. Exit
+
+Your choice: 
+2
+Enter an integer to remove : 
+3
+Integer removed
+
+1. Add
+2. Remove
+3. Display
+4. Exit
+
+Your choice: 
+2
+Enter an integer to remove : 
+6
+Element to be removed not found
+
+1. Add
+2. Remove
+3. Display
+4. Exit
+
+Your choice: 
+3
+Your List: [5]
+
+1. Add
+2. Remove
+3. Display
+4. Exit
+
+Your choice: 
+4
+Good Bye!
+
+
+
+
+
 
