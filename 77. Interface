@@ -45,7 +45,7 @@ o/p:
 
 Very important points:
 
-a. interfaces should be declared with keyword 'keyword'
+a. interfaces should be declared with keyword 'interface'
 
 b. All the methods defined inside an interface should be abstract method with access specifier as 'public'
 i.e public abstract void methodName();  
@@ -58,5 +58,12 @@ it should be of type 'public static final' mandatorily, if not compiler will gen
 d. Normal methods with body CANNOT be declared inside an interface, it will generate an error
 However, on latest versions of JAVA(8 or above), default and static methods as shown in Equation B and C can be created
 
-e. 
+e. Private methods can also be created in latest version of JAVA(v9)
+
+F. If a regular class implements an interface (Say Test class in this example), it should be done with 'implement' keyword as shown,
+then the sub class must implement all abstract methods of the parents class or it has to be declared as abstract as well.
+
+g. We cannot create an object of an Interface
+
+h. Multiple inheritance can be achieved using interface as shown
 
