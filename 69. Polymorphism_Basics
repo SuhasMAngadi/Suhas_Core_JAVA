@@ -1,0 +1,24 @@
+//Polymorphism: It is the ability of an object to take on many forms
+
+Types:
+
+1. Compile time polymorphism(Static Polymorphism):
+- Achieved through method overloading
+
+
+2. Run time polymorphism(Dynamic Polymorphism):
+- Achieved through method overriding
+
+------
+
+Method overloading:
+
+Conditions:
+a. Should have same method name
+b. Should be present in same class
+c. Arguments must be different i.e different number of arguments or different sequence of arguments or different types of arguments
+
+Method overriding:
+a. Should have same method name
+b. Should be present in a different same class
+c. Arguments must be same
