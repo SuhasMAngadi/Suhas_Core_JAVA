@@ -28,8 +28,8 @@ class C extends B
         b.showB();
         System.out.println("-------------------");
         C c = new C();
-        b.showA(); //C class can access A class, B class and C class methods because of inheritance
-        b.showB();
+        c.showA(); //C class can access A class, B class and C class methods because of inheritance
+        c.showB();
         c.showC();
 }
 }
