@@ -1,0 +1,32 @@
+//Inheritance is a property by which child object inherits all the behaviour and properties of parent object
+
+//Dog.java
+
+class Animal{                //parent class or super class
+
+    void eat(){
+        System.out.println("eating");
+    }
+}
+class Dog extends Animal      //child class or sub class
+{
+    public static void main(String[] args){
+        Dog d = new Dog();
+        d.eat(); 
+        /* Here eat() method is not defined in Dog class, so if we excute the code without "extends Animal"
+        it will throw an error, since eat() is a part of Animal class, If we include "extends Animal" as 
+        shown here, the properties (methods) of Animal class will be inherited by Dog class and calling 
+        d.eat(); will give proper output inspite it being in Animal class, so here we notice we can use a
+        method defined in parent class in different child classes instead of defining it repeatedly */
+    }
+}
+
+o/p:
+eating
+
+-----
+
+Advantage: Code re-usability
+
+disadvantage: Parents class and child class are tightly coupled, changes/errors in Parents class will reflect in child class too
+
