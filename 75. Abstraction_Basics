@@ -1,0 +1,10 @@
+Abstraction is defined as the process of reducing the object to its essence,
+so that only the necessary characteristics are exposed to the users
+
+
+Abstraction is achieved in 2 ways:
+
+a. Abstract class (0 to 100% Abstraction can be achieved)
+b. Interfaces (100% Abstraction can be achieved)
+
+
