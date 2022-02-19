@@ -1,0 +1,28 @@
+Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit
+
+Steps to achieve Encapsulation:
+1. Declare the variables of class as private
+2. Provide public setter and getter methods to modify and view the variable values
+
+class Employee{
+
+    private int empid;              //private variable
+    
+    public void setEmpid(int eid){  //public setter method
+        this.empid = eid;
+    }
+    public int getEmpid(){          //public getter method
+        return empid;
+    }
+}
+class Company{
+    public static void main (String[] args) {
+        Employee e = new Employee();
+        e.setEmpid(101);
+        System.out.println(e.getEmpid());
+    }
+    
+}
+
+o/p:
+101
