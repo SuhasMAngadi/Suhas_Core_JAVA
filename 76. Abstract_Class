@@ -47,7 +47,7 @@ But, it's not mandatory for an abstract class to have an abstract method, it can
 3. If a regular class extends a abstract class (Say Car and Scooter class in this example),
 then the sub class must implement all the abstract methods of the parents class or it has to be declared as abstract as well.
 
-4. We cannot create a object of Abstract classs
+4. We cannot create an object of Abstract class
 
 
 
