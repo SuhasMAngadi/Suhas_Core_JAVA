@@ -1,0 +1,54 @@
+//Abstraction using Abstract class
+
+------
+
+//Scooter.java
+
+abstract class Vehicle{         //Abstract class
+    
+    abstract void start();      //Abstract method: A method with no body implementation
+                                //In this class all the implementation of methods of Abstract class is hidden, this is abstraction
+}
+class Car extends Vehicle{
+    
+    void start(){                                         //implementing abstract methods of the parents class
+        System.out.println("Car: starts with key");  
+    }
+}
+class Scooter extends Vehicle{
+    
+    void start(){                                         //implementing abstract methods of the parents class
+        System.out.println("Scooter: starts with kick");  
+    }
+    public static void main (String[] args) {
+        Car c = new Car();
+        c.start();
+        
+        Scooter s = new Scooter();
+        s.start();
+        
+    }
+}
+
+o/p:
+Car: starts with key
+Scooter: starts with kick
+
+------
+
+Very Important Points:
+
+1. A method with no body implementation is called Abstract method
+
+2. A abstract method should always be declared under a abstract class
+i.e if a class contains abstract method, then class should be by default abstract class
+But, it's not mandatory for an abstract class to have an abstract method, it can have regular method also
+
+3. If a regular class extends a abstract class (Say Car and Scooter class in this example),
+then the sub class must implement all the abstract methods of the parents class or it has to be declared as abstract as well.
+
+4. We cannot create a object of Abstract classs
+
+
+
+
