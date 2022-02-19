@@ -22,9 +22,11 @@ class C extends B
     public static void main(String[] args){
         A a = new A();
         a.showA(); //A class can only access A class method
+        System.out.println("-------------------");
         B b = new B();
         b.showA(); //B class can access both A class and B class methods because of inheritance
         b.showB();
+        System.out.println("-------------------");
         C c = new C();
         b.showA(); //C class can access A class, B class and C class methods because of inheritance
         b.showB();
@@ -34,8 +36,10 @@ class C extends B
 
 o/p:
 Class A method
+--------------
 Class A method
 Class B method
+--------------
 Class A method
 Class B method
 Class C method
