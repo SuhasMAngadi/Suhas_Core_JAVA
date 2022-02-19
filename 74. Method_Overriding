@@ -1,9 +1,14 @@
 //Method Overriding
-Conditions:
 
+Conditions:
+a. Should have same method name
+b. Should be present in a different class
+c. Arguments must be same
+d. Should have inheritance
+
+------
 
 //Xyz.java
-
 
 class Test{
     void show(int a){
@@ -25,4 +30,36 @@ class Xyz extends Test{
 o/p:
 1
 2
+
+------
+
+//Calling Parent class method in overidden method using super keyword
+
+//Xyz.java
+
+class Test{
+    void show(){
+        System.out.println("1");
+    }
+}
+class Xyz extends Test{
+    void show(){
+        super.show(); //Calling Parent class method in overidden method using super keyword i.e super keyword is used to call a method present in super class
+        System.out.println("2");
+    }
+    public static void main (String[] args) {
+                  
+    Xyz x = new Xyz();
+    x.show();              
+    }
+}
+
+o/p:
+1
+2
+
+
+
+
+
 
