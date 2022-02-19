@@ -1,0 +1,6 @@
+Method Overloading Facts:
+
+1. It's not possible to overload a method just by having different return type
+2. main() method can be overloaded
+3. String method has higher precedence than StringBuffer method
+4. If passed data (say 'char') is differnt than return type of both methods (say 'String' and 'int') then auto promotion takes place
