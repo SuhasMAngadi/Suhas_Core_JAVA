@@ -1,0 +1,45 @@
+//Method Overloading with different types of arguments
+
+-----
+A.
+
+//Test.java
+
+class Test{
+    
+    void show(int a){
+         System.out.println("Method 1");
+    }
+    void show(String name){
+        System.out.println("Method 2");
+    }
+    public static void main(String[] args){
+        Test t = new Test();
+        t.show(10);
+    }
+}
+
+o/p:
+Method 1
+
+-----
+B.
+
+//Test.java
+
+class Test{
+    
+    void show(int a){
+         System.out.println("Method 1");
+    }
+    void show(String name){
+        System.out.println("Method 2");
+    }
+    public static void main(String[] args){
+        Test t = new Test();
+        t.show("Suhas");
+    }
+}
+
+o/p:
+Method 2
