@@ -1,0 +1,28 @@
+Types of class relationship:
+
+1. IS-A relationship: 
+* example - Inheritance
+* Dog is a Animal, Peacock is a Bird etc..
+* Tightly coupled
+
+2. HAS-A relationship:
+* example - Association
+* Car has a music player, Car has a engine etc...
+* Loosely coupled
+
+-----
+
+Association has two types:
+
+1. Aggregation:
+If classes have weak bonding then its referred as Aggregation,
+for example Car and Music player share weak bonding as both can
+exist without one another.
+
+2. Composition:
+If classes have strong bonding then its referred as Composition,
+for example Car and Engine share strong bonding as both cannot
+exist without one another.
+
+
+
