@@ -1,0 +1,62 @@
+//Abstraction using Interface
+
+------
+
+//Test.java
+
+interface I1{
+
+    public abstract void show();  //can also be written as void show();
+    
+    //public static final a = 10; ------ Equation A
+    /* default void display{      ------ Equation B
+        
+    }  */
+    /* static void display{       ------ Equation C
+        
+    }  */
+
+}
+
+interface I2{
+    public abstract void display();
+}
+
+class Test implements I1, I2{
+    public void show(){
+        System.out.println("1");
+    }
+    public void display(){
+        System.out.println("2");
+    }
+    public static void main (String[] args) {
+        Test s = new Test();
+        s.show();
+        Test d = new Test();
+        d.display();
+    }
+}
+
+o/p:
+1
+2
+
+------
+
+Very important points:
+
+a. interfaces should be declared with keyword 'keyword'
+
+b. All the methods defined inside an interface should be abstract method with access specifier as 'public'
+i.e public abstract void methodName();  
+The same can also be written as  void methodName();
+but compiler will assign public abstract to it by default, so both the ways of writing is correct.
+
+c. Equation A represents any field which is declared inside an interface,
+it should be of type 'public static final' mandatorily, if not compiler will generate an error
+
+d. Normal methods with body CANNOT be declared inside an interface, it will generate an error
+However, on latest versions of JAVA(8 or above), default and static methods as shown in Equation B and C can be created
+
+e. 
+
