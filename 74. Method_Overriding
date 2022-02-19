@@ -1,0 +1,28 @@
+//Method Overriding
+Conditions:
+
+
+//Xyz.java
+
+
+class Test{
+    void show(int a){
+        System.out.println("1");
+    }
+}
+class Xyz extends Test{
+    void show(int a){
+        System.out.println("2");
+    }
+    public static void main (String[] args) {
+    Test t = new Test();
+    t.show(5);               //1
+    Xyz x = new Xyz();
+    x.show(10);               //2
+    }
+}
+
+o/p:
+1
+2
+
