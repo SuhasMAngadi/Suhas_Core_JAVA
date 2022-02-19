@@ -1,0 +1,23 @@
+//Employee.java
+
+class Employee{
+
+    String name;
+    int emp_id;
+    
+    Employee(String name, int emp_id){
+        this.name = name;
+        this.emp_id = emp_id;
+    }
+    
+    public static void main(String[] args){
+    Employee E1 = new Employee("Suhas",101);
+    Employee E2 = new Employee("potato",102);
+    System.out.println("Employee 1: "+E1.name+" "+E1.emp_id);
+    System.out.println("Employee 2: "+E2.name+" "+E2.emp_id);
+    }
+}    
+
+o/p:
+Employee 1: Suhas 101
+Employee 2: potato 102
