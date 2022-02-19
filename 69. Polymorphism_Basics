@@ -19,7 +19,9 @@ b. Should be present in same class
 c. Arguments must be different i.e different number of arguments or different sequence of arguments or different types of arguments
 
 Method overriding:
+
+Conditions:
 a. Should have same method name
-b. Should be present in a different same class
+b. Should be present in a different class
 c. Arguments must be same
 d. Should have inheritance
