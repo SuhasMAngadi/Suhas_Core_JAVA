@@ -1,0 +1,43 @@
+//Hierarchical Inheritance: A --> B and C
+
+//C.java
+
+class A{
+
+    void showA(){
+        System.out.println("Class A method");
+    }
+}
+class B extends A
+{
+    void showB(){
+        System.out.println("Class B method");
+    }
+}
+class C extends A
+{
+    void showC(){
+        System.out.println("Class C method");
+    }
+    public static void main(String[] args){
+        A a = new A();
+        a.showA(); //A class can only access A class method
+        System.out.println("--------------");
+        B b = new B();
+        b.showA(); //B class can access A class and B class methods because of inheritance
+        b.showB();
+        System.out.println("--------------");
+        C c = new C();
+        c.showA(); //C class can access A class and C class methods because of inheritance
+        c.showC();
+}
+}    
+
+o/p:
+Class A method
+--------------
+Class A method
+Class B method
+--------------
+Class A method
+Class C method
