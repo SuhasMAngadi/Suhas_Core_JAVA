@@ -1,0 +1,50 @@
+
+//Method Overloading with different number of arguments
+
+-----
+A.
+
+//Test.java
+
+class Test{
+    
+    void show(int a, int b){              // No. of arguments = 2
+         System.out.println("Method 1");
+    }
+    void show(int a){                     // No. of arguments = 1
+         System.out.println("Method 2");
+    }
+    public static void main(String[] args){
+        Test t = new Test();
+        t.show(10);
+    }
+}
+
+o/p:
+Method 2
+
+-----
+B.
+
+//Test.java
+
+class Test{
+    
+    void show(int a, int b){              // No. of arguments = 2
+         System.out.println("Method 1");
+    }
+    void show(int a){                     // No. of arguments = 1
+         System.out.println("Method 2");
+    }
+    public static void main(String[] args){
+        Test t = new Test();
+        t.show(10,20);
+    }
+}
+
+o/p:
+Method 1
+
+
+
+
