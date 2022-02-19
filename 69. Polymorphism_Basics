@@ -22,3 +22,4 @@ Method overriding:
 a. Should have same method name
 b. Should be present in a different same class
 c. Arguments must be same
+d. Should have inheritance
