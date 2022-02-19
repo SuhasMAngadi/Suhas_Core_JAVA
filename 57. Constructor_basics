@@ -1,5 +1,0 @@
-1. Constructor will have same name as a class
-2. They do not have a return type
-3. They are invoked using new operator
-4. Used for initializing the objects
-5. default constructor is the one with empty body

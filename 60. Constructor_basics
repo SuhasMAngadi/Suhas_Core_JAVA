@@ -1,0 +1,30 @@
+1. Constructor will have same name as a class
+2. They do not have a return type, not even void
+3. They are invoked using new operator
+4. Executes automatically when we create a object
+
+
+//Need for constructor:  used for initializing the objects while they are created
+
+Types of constructors:
+1. Default constructor
+2. User defined constructor with arguments
+3. Parameterized constructor
+
+------
+
+1. Default constructor: 
+- Compiler generates this by defaut when an object is created 
+- Does not contain any parameters
+
+------
+
+2. User defined constructor with arguments:
+- User manually creates this constructor
+- Does not contain any parameters
+
+------
+
+3. Parameterized constructor:
+- User manually creates this constructor
+- contains parameters
