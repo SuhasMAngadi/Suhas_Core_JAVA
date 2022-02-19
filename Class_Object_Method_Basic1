@@ -1,0 +1,37 @@
+class Animal{                     //access modifier will be default if not specified
+
+        //method
+        public void eat(){
+            System.out.println("eating");
+        }
+        
+        public static void main(String[] args){       //having main method in any class is mandatory
+        System.out.println("1");
+        Animal buzo = new Animal();     //object
+        buzo.eat();       //calling a method through object
+        buzo.run();  
+        
+        Bird peacock = new Bird();  /* different class object also can be declared and 
+                                    should be declared within same main method, do not create another main method inside the Class Bird */
+        peacock.fly();
+        } 
+        
+        public void run(){
+            System.out.println("running");
+        }
+}
+class Bird{
+        
+         void fly(){
+            System.out.println("flying");
+        }
+}    
+
+
+o/p:
+1
+eating
+running
+flying
+
+
