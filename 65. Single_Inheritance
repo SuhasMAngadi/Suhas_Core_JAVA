@@ -1,0 +1,28 @@
+//Single inheritance: A --> B
+
+//B.java
+
+class A{
+
+    void showA(){
+        System.out.println("Class A method");
+    }
+}
+class B extends A
+{
+    void showB(){
+        System.out.println("Class B method");
+    }
+    public static void main(String[] args){
+        A A_obj = new A();
+        A_obj.showA(); //A class can only access A class method
+        B B_obj = new B();
+        B_obj.showA(); //B class can access both A class and B class methods because of inheritance
+        B_obj.showB();
+    }
+}
+
+o/p:
+Class A method
+Class A method
+Class B method
