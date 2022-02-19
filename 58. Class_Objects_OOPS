@@ -1,0 +1,64 @@
+/* Pillars of OOPS
+Classes,
+methods and objects,
+inheritance,
+polymorphism,
+abstraction,
+encapsulation */
+
+------
+
+//Class object and methods real time example
+
+1. ANIMAL(class) - objects: Dog, cat, lion etc..
+                   methods: eat(), run()....
+                   
+------
+
+//Class syntax: 
+
+AccessModifier class ClassName{
+
+//body of the class
+
+}
+
+------
+
+//method: used to perform particular task within a class
+
+Syntax:
+
+Access-modifier  return-type  methodName (List of parameters){
+
+//body of method
+
+}
+
+------
+
+//object: instance of class
+
+There arr 5 ways to create objects:
+a. using new keyword.
+b. using newInstance() method.
+c. clone method.
+d. deserialization method.
+e. factory method.
+
+//2 steps to create object using new keyword: 
+1. declaration :   Animal buzo;
+2. Instantiation and Initialization:    buzo = new Animal();
+
+writing both in one line will give object creation syntax i.e
+
+Animal buzo = new Animal();
+
+
+
+
+
+
+
+
+
