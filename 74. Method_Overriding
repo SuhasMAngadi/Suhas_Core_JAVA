@@ -58,7 +58,13 @@ o/p:
 1
 2
 
+------
 
+Cases where methods cannot be overridden:
+
+a. Final methods cannot be overridden
+b. Static methods cannot be overridden
+c. Private methods cannot be overridden
 
 
 
