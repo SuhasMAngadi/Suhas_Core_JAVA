@@ -14,7 +14,7 @@ Types of constructors:
 ------
 
 1. Default constructor: 
-- Compiler generates this by defaut when an object is created 
+- Compiler generates this by defaut when an object is created (only when user himself doesn't create any other constructor in program)
 - Does not contain any parameters
 
 ------
