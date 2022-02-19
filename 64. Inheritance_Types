@@ -20,3 +20,9 @@ B and C --> A
 
 A --> B and C --> D
 
+IMPORTANT:
+
+//Two conditions where inheritance doesn't work
+
+a. Constructors cannot be inherited from parent class
+b. Private members of parent class cannot be accessed by child class
