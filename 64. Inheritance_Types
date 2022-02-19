@@ -1,0 +1,22 @@
+Types of inheritance:
+
+1. Single inheritance:
+
+A --> B
+
+2. Multilevel inheritance:
+
+A --> B --> C
+
+3. Heirarchial inheritance:
+
+A --> B and C
+
+4. Multiple inheritance: (Not supported in JAVA)
+
+B and C --> A
+
+5. Hybrid inheritance: (Not supported in JAVA)
+
+A --> B and C --> D
+
