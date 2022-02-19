@@ -1,4 +1,56 @@
 //Object initialization can be done in 3 ways
 
+------
+
 1. using reference variable:
+
+//Animal.java
+
+class Animal{
+
+    String color;
+    int age;
+    public static void main(String[] args){
+    
+    Animal buzo = new Animal;
+    buzo.color = "black";    //initializing object using dot operator i.e reference variable
+    buzo.age = 10;
+    System.out.print("Buzo color : " + buzo.color + " Buzo age : " + buzo.age);
+    }
+}    
+
+o/p:
+Buzo color : black Buzo age : 10
+
+------
+
+2. using method:
+
+//Animal.java
+
+class Animal{
+
+    String color; 
+    int age;
+    public void initObj(String a, int b){
+        color = a;
+        age = b; 
+    }
+    public void display(){
+        System.out.print("Buzo color : " + color + "Buzo age : " + age);
+    }
+    
+    public static void main(String[] args){
+    Animal buzo = new Animal;
+    buzo.initObj("black",10);
+    buzo.display();
+    }
+} 
+
+o/p:
+Buzo color : black Buzo age : 10
+
+------
+
+3. using Constructor:
 
