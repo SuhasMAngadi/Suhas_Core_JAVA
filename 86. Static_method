@@ -14,8 +14,14 @@ class Test
     }
     public static void main (String[] args) {
         
-        display();  //it can also be written as Test.display(); as it's in same class writing display(); is also correct
-        Xyz.show(); //It cannot be written as show(); as its present in different class, so class name should also be specified as Xyz.show();
+        display();  
+        //it can also be written as Test.display(); as it's in same class writing display(); is also correct
+        
+        Xyz.show(); 
+        //It cannot be written as show(); as its present in different class, so class name should also be specified i.e Xyz.show();
+        
+        /* Here static method from same or different class can be called directly by class name without creating an object,
+        the same connot be done if static keyword is not used */
     }
 }
 class Xyz
@@ -29,3 +35,12 @@ class Xyz
 o/p:
 1
 2
+
+-------
+Rules for static methods:
+1. static method belongs to the class and not to the object
+2. static method from same or different class can be called directly by class name without creating an object
+3. static method can only access static data. It cannot access non-static data (instance data)
+4. static method can only call other static methods. It cannot call non-static method
+5. static method cannot refer to 'this' or 'super' keyword in anyway
+
