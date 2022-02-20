@@ -1,0 +1,103 @@
+1. 'this' keyword is used to invoke current class instance variable
+
+//Xyz.java
+
+class Test{
+
+    int i; //instance variable
+    
+    void setValue(int i) //'i' is a parameter (local variable)
+    {
+        this.i = i;  //LHS will represent instance variable and RHS will represent local variable
+    }
+    void show()
+    {
+        System.out.println(i);   
+    }
+}
+class Xyz
+{
+    public static void main (String[] args) {
+        Test t = new Test();
+        t.setValue(10);
+        t.show();
+    }
+}
+
+o/p:
+10 
+
+------
+2. 'this' keyword is used to invoke current class method (implicitly)
+------
+3. 'this' keyword is used to invoke current class constructor
+
+//explained this scenario in detail in 80. this_Keyword_Constructor
+------
+4. 'this' keyword is used to pass as an argument in method call
+
+//Test.java
+
+class Test{
+    
+    void m1(Test t) 
+    {
+       System.out.println("In method m1");   
+    }
+    void m2()
+    {
+       m1(this);    //calling method m1 using 'this' as an argument
+    }
+    public static void main (String[] args) {
+        Test t = new Test();
+        t.m2();
+    }    
+}
+
+o/p:
+In method m1
+
+------
+5. 'this' keyword is used to pass as an argument in constructor call
+
+//Test1.java
+
+class Test{
+    
+    Test(Test1 t1){
+        System.out.println("In a constructor");
+    }
+    
+}
+class Test1
+{
+    void Test1(){
+        Test t = new Test(this);
+    }
+    public static void main (String[] args) {
+        Test1 t1 = new Test1();
+        t1.Test1();
+    }
+}
+
+o/p:
+In a constructor
+
+------
+6. 'this' keyword is used to return current class instance from method
+
+//Test.java
+
+class Test{
+    
+    Test m1(){
+        return this;
+    }
+    public static void main (String[] args) {
+        Test t = new Test();
+        t.m1();
+    }
+    
+}
+
+
