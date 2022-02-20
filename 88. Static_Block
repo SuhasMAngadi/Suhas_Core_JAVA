@@ -1,0 +1,31 @@
+//Static block is a set of instructions that is executed automatically when a class is loaded into memory
+
+//Static blocks will be executed first and if there are multiple static blocks, then they will be executed
+in sequential manner as they appear in code and then finally main method will be executed
+
+//Generally used for initializing static members
+
+------
+
+//Test.java
+
+class Test
+{
+    static
+    {
+        System.out.println("Inside static block1");
+    }
+    public static void main (String[] args) 
+    {
+        System.out.println("Inside main");
+    }
+    static
+    {
+        System.out.println("Inside static block2");
+    }
+}
+
+o/p:
+Inside static block1
+Inside static block2
+Inside main
