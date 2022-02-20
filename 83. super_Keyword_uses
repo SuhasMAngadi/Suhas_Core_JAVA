@@ -1,0 +1,68 @@
+1. 'super' keyword can be used to refer immediate parent class instance variable
+//Example for this already explained in 82. super_Keyword
+
+------
+2. 'super' keyword can be used to invoke immediate parent class method
+
+//Example:
+
+//B.java
+
+class A
+{
+    void m1()
+    {
+       System.out.println("In class A, method m1"); 
+    }
+}
+class B extends A 
+{
+    void m1(){
+        System.out.println("In class B, method m1");
+    }
+    void show()
+    {
+        super.m1();   //Here 'super' keyword is used to refer parent class method m1
+        m1();         //This will refer to current class method m1
+    }
+    public static void main (String[] args) {
+    B b = new B();
+    b.show();
+        
+    }
+}
+
+o/p:
+In class A, method m1
+In class B, method m1
+
+------
+3. 'super' keyword can be used to invoke immediate parent class constructor
+
+//Example:
+
+//B.java
+
+class A
+{
+    A()
+    {
+       System.out.println("In class A constructor"); 
+    }
+}
+class B extends A 
+{
+    B()
+    {
+        super();   //Even if u don't define this here, comipler will automatically generate a super keyword here i.e o/p will remain same
+        System.out.println("In class B constructor");
+    }
+    
+    public static void main (String[] args) {
+    B b = new B();
+    }
+}
+
+o/p:
+In class A constructor
+In class B constructor
