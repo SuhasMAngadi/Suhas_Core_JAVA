@@ -1,1 +1,31 @@
-Static method: 
+Static method: it's used for memory management by reducing no. of objects created,
+static method belongs to the class and not to the object
+
+Example 1:
+
+//Test.java
+
+class Test
+{
+    
+    static void display()
+    {
+        System.out.println("1");
+    }
+    public static void main (String[] args) {
+        
+        display();  //it can also be written as Test.display(); as it's in same class writing display(); is also correct
+        Xyz.show(); //It cannot be written as show(); as its present in different class, so class name should also be specified as Xyz.show();
+    }
+}
+class Xyz
+{
+    static void show()
+    {
+        System.out.println("2");
+    }
+}
+
+o/p:
+1
+2
