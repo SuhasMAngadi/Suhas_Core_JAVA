@@ -1,4 +1,4 @@
-final keyword is used to restrict a class, variable, and method.
+final keyword is a non-access modifier used to restrict a class, variable, and method.
 i.e if variable is defined with final keyword then its value cannot be changed
 Similarly, if a method is defined with final keyword then it cannot be overidden
 and if a class is defined with final keyword then it cannot be extended
