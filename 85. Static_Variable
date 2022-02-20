@@ -1,0 +1,65 @@
+The static keyword in Java is mainly used for memory management
+
+Static Variable: used for memory management by reducing no. of objects created
+
+------
+Example 1:
+
+//Test1.java
+
+class Test
+{
+    static int a = 10;
+}
+class Test1 
+{
+    
+    public static void main (String[] args)
+    {
+        System.out.println(Test.a);  
+        
+        /* Here static variable 'a' from a different class can be called directly without creating an object,
+        the same connot be done if static keyword is not used */
+    }
+}
+
+o/p:
+10
+
+------
+Example 2: In this example, observe that company name is same for all employees i.e Twitter, so if we assume there are 1000 employees we have to create
+1000 different objects as e1, e2, e3..... and for each object we have to define company name, so 1000 different memory locations will be
+assigned for this activity, instead as company name is same, we will declare it as a static so that it will remain common to all objects
+and just one memory location is allocated that too only when the class loads.
+
+//Employee.java
+
+class Employee
+{
+    int EmpID;
+    String Name;
+    static String Company = "Twitter";
+    
+    Employee(int EmpID, String Name)
+    {
+        this.EmpID = EmpID;
+        this.Name = Name;
+    }
+    void display()
+    {
+        System.out.println("Employee ID: "+EmpID+" Employee Name: "+Name+" Company Name: "+Company);
+    }
+    public static void main (String[] args) {
+        Employee e1 = new Employee(101, "Suhas");
+        e1.display();
+        Employee e2 = new Employee(102, "Potato");
+        e2.display();
+    }
+}
+
+o/p:
+Employee ID: 101 Employee Name: Suhas Company Name: Twitter
+Employee ID: 102 Employee Name: Potato Company Name: Twitter
+
+
+
