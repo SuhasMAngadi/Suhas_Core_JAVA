@@ -1,0 +1,97 @@
+this keyword: this keyword refers to the current object or instance variable in a method or constructor.
+
+
+/* Example 1: Consider this example where local variable name 'x' and instance variable name 'i' is different,
+so program will be executed successfully printing i value as output without any ambiguity */
+
+//Xyz.java
+
+class Test{
+
+    int i; //instance variable
+    
+    void setValue(int x) //'x' is a parameter (local variable)
+    {
+        i = x;
+    }
+    void show()
+    {
+        System.out.println(i);   
+    }
+}
+class Xyz
+{
+    public static void main (String[] args) {
+        Test t = new Test();
+        t.setValue(10);
+        t.show();
+    }
+}
+
+o/p:
+10
+
+------
+/* Example 2: Consider this example where local variable name 'i' and instance variable name 'i' is same, because of this ambiguity,
+program will not give expected value of i which is 10, but instead will give o/p as 0 which is default value of an integer */
+
+//Xyz.java
+
+class Test{
+
+    int i; //instance variable
+    
+    void setValue(int i) //'i' is a parameter (local variable)
+    {
+        i = i;    //ambiguity
+    }
+    void show()
+    {
+        System.out.println(i);   
+    }
+}
+class Xyz
+{
+    public static void main (String[] args) {
+        Test t = new Test();
+        t.setValue(10);
+        t.show();
+    }
+}
+
+o/p:
+0 
+
+------
+
+/* Example 3: Consider this example where local variable name 'i' and instance variable name 'i' is same, to get the correct output and avoid 
+ambiguity we make use of 'this' keyword, which will refer to currect class object or instance variable as shown in this example, 
+so that expected output value of i which is 10 will be correctly displayed inspite of having same name 'i' for instance and local variable */
+
+//Xyz.java
+
+class Test{
+
+    int i; //instance variable
+    
+    void setValue(int i) //'i' is a parameter (local variable)
+    {
+        this.i = i;  //LHS will represent instance variable and RHS will represent local variable
+    }
+    void show()
+    {
+        System.out.println(i);   
+    }
+}
+class Xyz
+{
+    public static void main (String[] args) {
+        Test t = new Test();
+        t.setValue(10);
+        t.show();
+    }
+}
+
+o/p:
+10 
+
