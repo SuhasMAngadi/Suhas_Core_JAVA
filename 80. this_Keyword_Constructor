@@ -1,0 +1,104 @@
+// 'this' keyword can be used to invoke current class constructor
+
+------
+//Example 1a: Here i am not passing any argument while creating object so no argument constuctor will be called
+
+//Test.java
+
+class Test{
+    
+    Test() 
+    {
+       System.out.println("In a no argument constructor");   
+    }
+    Test(int a)
+    {
+       System.out.println("In a parameterized constructor");  
+    }
+    public static void main (String[] args) {
+        Test t = new Test();
+        
+    }    
+}
+
+o/p:
+In a no argument constructor
+
+//Example 1b: Here i am passing an argument while creating object so parameterized constuctor will be called
+
+//Test.java
+
+class Test{
+    
+    Test() 
+    {
+       System.out.println("In a no argument constructor");   
+    }
+    Test(int a)
+    {
+       System.out.println("In a parameterized constructor");  
+    }
+    public static void main (String[] args) {
+        Test t = new Test(10);
+        
+    }    
+}
+
+o/p:
+In a parameterized constructor
+
+------
+Explaining the examples 1a and 1b with usage of 'this' keyword to invoke a constructor
+
+Example 2a: Here 'this' keyword will be used to call a constructor, since no arguments are passed it will call a no argument constructor
+
+//Test.java
+
+class Test{
+    
+    Test() 
+    {
+       System.out.println("In a no argument constructor");   
+    }
+    Test(int a)
+    {
+       this();              /* Here 'this' keyword will be used to call a constructor, since no arguments are passed
+                                it will call a no argument constructor */  
+                                         
+       System.out.println("In a parameterized constructor");  
+    }
+    public static void main (String[] args) {
+        Test t = new Test(10);
+        
+    }    
+}
+
+o/p:
+In a no argument constructor
+In a parameterized constructor
+
+Example 2b: Here 'this' keyword will be used to call a constructor, since argument is passed it will call a parameterized constructor
+                              
+//Test.java
+
+class Test{
+    
+    Test() 
+    {  this(10);            /* Here 'this' keyword will be used to call a constructor, since argument is passed
+                                it will call a parameterized constructor */  
+    
+       System.out.println("In a no argument constructor");   
+    }
+    Test(int a)
+    {
+       System.out.println("In a parameterized constructor");  
+    }
+    public static void main (String[] args) {
+        Test t = new Test();
+        
+    }    
+}
+
+o/p:
+In a parameterized constructor
+In a no argument constructor
