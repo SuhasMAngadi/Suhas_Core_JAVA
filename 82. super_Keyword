@@ -1,0 +1,24 @@
+super keyword in Java is a reference variable which is used to refer immediate parent class object
+
+//B.java
+
+class A{
+    int a = 10; //parent class instance
+}
+class B extends A{
+    int a = 20; //child class instance
+    void show(int a){
+        System.out.println(a);  //will print the value passed by object i.e 30
+        System.out.println(this.a);  //will print current class instance value i.e 20
+        System.out.println(super.a);  //will print parent class instance value i.e 10
+    }
+    public static void main (String[] args) {
+        B b = new B();
+        b.show(30);
+    }
+}
+
+o/p:
+30
+20
+10
