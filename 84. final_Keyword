@@ -1,0 +1,91 @@
+final keyword is used to restrict a class, variable, and method.
+i.e if variable is defined with final keyword then its value cannot be changed
+Similarly, if a method is defined with final keyword then it cannot be overidden
+and if a class is defined with final keyword then it cannot be extended
+
+------
+//Example 1: Variable with a final keyword
+
+//Test.java
+
+class Test
+{
+    public static void main (String[] args) {
+        final int i = 10;
+        i = i + 20;           //This code will generate an error as i am trying to change the value of variable with a final keyword
+        System.out.println(i);
+    }
+}
+
+o/p:
+Test.java:12: error: cannot assign a value to final variable i
+        i = i + 20;
+        ^
+1 error
+
+------
+//Example 2: Method with a final keyword
+
+//Test1.java
+
+class Test
+{
+    final void m1()
+    {
+        System.out.println("In Class Test");
+    }
+}
+class Test1 extends Test
+{
+    void m1()
+    {
+        System.out.println("In Class Test1");
+    }
+    public static void main (String[] args) {
+        Test1 t1 = new Test1();
+        t1.m1();
+    }
+}
+
+o/p:
+
+Test1.java:16: error: m1() in Test1 cannot override m1() in Test
+    void m1()
+         ^
+  overridden method is final
+1 error
+
+------
+//Example 3: Class with a final keyword
+
+//Test1.java
+
+final class Test
+{
+    void m1()
+    {
+        System.out.println("In Class Test");
+    }
+}
+class Test1 extends Test
+{
+    void m1()
+    {
+        System.out.println("In Class Test1");
+    }
+    public static void main (String[] args) {
+        Test1 t1 = new Test1();
+        t1.m1();
+    }
+}
+
+o/p:
+
+Test1.java:14: error: cannot inherit from final Test
+class Test1 extends Test
+                    ^
+1 error
+
+
+
+
