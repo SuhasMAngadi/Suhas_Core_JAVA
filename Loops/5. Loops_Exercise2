@@ -34,3 +34,37 @@ Enter a number
 Enter a number
 30
 Done, The sum is: 111
+
+Alternate solution:
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        
+        int sum=0;
+        
+            while(sum<100)
+            {
+                System.out.println("Enter a number");
+                sum += s.nextInt();
+                
+            }
+            System.out.println("Done, The sum is: "+sum);
+        }
+    }
+    
+ o/p:
+ Enter a number
+29
+Enter a number
+33
+Enter a number
+22
+Enter a number
+67
+Done, The sum is: 151
+
+
+
