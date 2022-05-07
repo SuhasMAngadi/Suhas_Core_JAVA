@@ -12,7 +12,7 @@ class Animal{
     int age;
     public static void main(String[] args){
     
-    Animal buzo = new Animal;
+    Animal buzo = new Animal();
     buzo.color = "black";    //initializing object using dot operator i.e reference variable
     buzo.age = 10;
     System.out.print("Buzo color : " + buzo.color + " Buzo age : " + buzo.age);
@@ -41,7 +41,7 @@ class Animal{
     }
     
     public static void main(String[] args){
-    Animal buzo = new Animal;
+    Animal buzo = new Animal();
     buzo.initObj("black",10);
     buzo.display();
     }
